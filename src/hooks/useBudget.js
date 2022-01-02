@@ -45,13 +45,16 @@ const useBudget = (key = 'BUDGET') => {
     }
     budgetActions.setAll(state)
   }
-
+  const modifyAssigned = (id, amount) => {
+    // Here
+  }
   useMount(() => {
     getInitialBudget()
   })
 
   return {
     budget,
+    modifyAssigned,
   }
 }
 

@@ -29,7 +29,7 @@
     "lint:js": "eslint --ext jsx,js src/",
     "lint:js:fix": "eslint --ext jsx,js --fix src/",
     "lint:all": "yarn lint:css && yarn lint:js",
-    "start": "react-scripts start",
+    "start": "react-scripts start --no-cache",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll",
     "test:coverage": "yarn test --coverage",

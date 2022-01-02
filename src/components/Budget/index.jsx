@@ -5,7 +5,7 @@ import Budget from './Budget'
 import useBudget from '../../hooks/useBudget'
 
 function Wrapper(props) {
-  const { budget } = useBudget()
+  const budget = useBudget()
   return <Budget {...props} {...budget} />
 }
 

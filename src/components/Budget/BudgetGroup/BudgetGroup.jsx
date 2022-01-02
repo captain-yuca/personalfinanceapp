@@ -8,7 +8,7 @@ import { mdiArrowDownBold } from '@mdi/js'
 import BudgetItem from '../BudgetItem'
 import { Wrapper } from './BudgetGroup.styles'
 
-function BudgetGroup({ budgetGroup }) {
+function BudgetGroup({ budgetGroup, modifyAssigned }) {
   return (
     <div>
       <div className="block">
@@ -35,7 +35,7 @@ function BudgetGroup({ budgetGroup }) {
         </div>
       </div>
       {budgetGroup.budgetItems.map(item => (
-        <BudgetItem key={item.id} budgetItem={item} />
+        <BudgetItem key={item.id} budgetItem={item} modifyAssigned={modifyAssigned} />
       ))}
     </div>
   )
@@ -49,6 +49,7 @@ BudgetGroup.propTypes = {
     available: PropTypes.string,
     budgetItems: PropTypes.array,
   }),
+  modifyAssigned: PropTypes.func.isRequired,
 }
 
 export default BudgetGroup

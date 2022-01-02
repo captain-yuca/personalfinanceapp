@@ -7,7 +7,6 @@ export const Text = styled.span`
 `
 
 export const Remove = styled.span`
-  color: ${({ theme }) => theme.colors.text};
   font-weight: bold;
   transition: all 0.3s ease;
 `
