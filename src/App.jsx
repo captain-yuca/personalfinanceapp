@@ -7,6 +7,7 @@ import Router from './Router'
 import { GlobalStyles } from './styles/GlobalStyles'
 import { ReactLogo, StyledApp } from './styles/App.styles'
 import 'bulma/css/bulma.min.css'
+import 'react-month-picker/css/month-picker.css'
 
 function App() {
   return (
