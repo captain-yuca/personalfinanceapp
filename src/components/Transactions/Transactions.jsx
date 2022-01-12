@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 
 // styles
 import { Wrapper } from './Transactions.styles'
+import TransactionItem from './TransactionItem/TransactionItem'
 
 function Transactions({ transactions }) {
   return (
-    <table className="table">
+    <table className="table is-fullwidth is-hoverable">
       <thead>
         <tr>
           <th>Account</th>
@@ -20,15 +21,7 @@ function Transactions({ transactions }) {
       </thead>
       <tbody>
         {transactions.map(item => (
-          <tr>
-            <td>{item.account}</td>
-            <td> {item.date}</td>
-            <td> {item.payee}</td>
-            <td> {item.budgetGroupAndItem}</td>
-            <td> {item.notes}</td>
-            <td> {item.outflow}</td>
-            <td> {item.inflow}</td>
-          </tr>
+          <TransactionItem transaction={item} />
         ))}
       </tbody>
     </table>
