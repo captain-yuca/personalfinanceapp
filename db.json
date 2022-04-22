@@ -1,0 +1,208 @@
+{
+  "budget": [
+    {
+      "id": 1,
+      "name": "Sinking Funds",
+      "assigned": "$24.99",
+      "activity": "$25.00",
+      "available": "$40.00",
+      "budgetItems": [
+        {
+          "id": 1,
+          "name": "Sinking Funds",
+          "assigned": "$24.99",
+          "activity": "$25.00",
+          "available": "$40.00"
+        },
+        {
+          "id": 2,
+          "name": "Eat Out",
+          "assigned": "$24.99",
+          "activity": "$25.00",
+          "available": "$40.00"
+        },
+        {
+          "id": 3,
+          "name": "Video Games",
+          "assigned": "$24.99",
+          "activity": "$25.00",
+          "available": "$40.00"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Amex Platinum"
+    },
+    {
+      "id": 2,
+      "name": "Checking Account"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "accountId": 1,
+      "date": "12/02/2021",
+      "payeeId": 2,
+      "budgetItemId": 2,
+      "notes": "",
+      "outflow": "$400.00",
+      "inflow": "$200.15"
+    },
+    {
+      "id": "2",
+      "accountId": 1,
+      "date": "12/02/2021",
+      "payeeId": 2,
+      "budgetItemId": 1,
+      "notes": "",
+      "outflow": "",
+      "inflow": "$200.15"
+    },
+    {
+      "id": "3",
+      "accountId": 1,
+      "date": "12/02/2021",
+      "payeeId": 1,
+      "budgetItemId": 4,
+      "notes": "",
+      "outflow": "$100.00",
+      "inflow": "$200.15"
+    }
+  ],
+  "payees": [
+    {
+      "id": 1,
+      "name": "Walgreens"
+    },
+    {
+      "id": 2,
+      "name": "MUSA"
+    }
+  ],
+  "budgetItems": [
+    {
+      "id": 1,
+      "budgetGroupId": 1,
+      "name": "Travel"
+    },
+    {
+      "id": 2,
+      "budgetGroupId": 1,
+      "name": "Food"
+    },
+    {
+      "id": 3,
+      "budgetGroupId": 2,
+      "name": "Groceries"
+    },
+    {
+      "id": 4,
+      "budgetGroupId": 2,
+      "name": "Rent"
+    }
+  ],
+  "budgetGroups": [
+    {
+      "id": 1,
+      "title": "Just for Fun"
+    },
+    {
+      "id": 2,
+      "title": "Immediate"
+    }
+  ],
+  "transactionFieldMappings": [
+    {
+      "id": 1,
+      "name": "Account",
+      "fieldValueKey": "account.name",
+      "updateValueKey": "accountId",
+      "resource": "accounts",
+      "inputTypeId": 2,
+      "input": {
+        "fieldValueKey": "name",
+        "updateValueKey": "id"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Date",
+      "fieldValueKey": "date",
+      "updateValueKey": "date",
+      "inputTypeId": 1
+    },
+    {
+      "id": 3,
+      "name": "Payee",
+      "fieldValueKey": "payee.name",
+      "updateValueKey": "payeeId",
+      "resource": "payees",
+      "inputTypeId": 2,
+      "input": {
+        "fieldValueKey": "name",
+        "updateValueKey": "id"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Budget Group/Item",
+      "fieldValueKey": "budgetItem.name",
+      "updateValueKey": "budgetItemId",
+      "resource": "budgetGroups",
+      "inputTypeId": 3,
+      "input": {
+        "listKey": "budgetItems",
+        "titleKey": "title",
+        "fieldValueKey": "name",
+        "updateValueKey": "id"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Notes",
+      "fieldValueKey": "notes",
+      "updateValueKey": "notes",
+      "inputTypeId": 4
+    },
+    {
+      "id": 6,
+      "name": "Outflow",
+      "fieldValueKey": "outflow",
+      "updateValueKey": "outflow",
+      "inputTypeId": 5
+    },
+    {
+      "id": 7,
+      "name": "Inflow",
+      "fieldValueKey": "inflow",
+      "updateValueKey": "inflow",
+      "inputTypeId": 5
+    }
+  ],
+  "inputTypes": [
+    {
+      "id": 1,
+      "type": "Date"
+    },
+    {
+      "id": 2,
+      "type": "SimpleList"
+    },
+    {
+      "id": 3,
+      "type": "NestedList"
+    },
+    {
+      "id": 4,
+      "type": "Text"
+    },
+    {
+      "id": 5,
+      "type": "Number"
+    }
+  ]
+}

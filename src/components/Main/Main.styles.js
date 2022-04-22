@@ -22,7 +22,6 @@ export const Title = styled.h2`
 export const Description = styled.p``
 
 export const Link = styled.a`
-  color: ${({ theme, color }) => theme.colors[color] || theme.colors.primary};
   font-weight: bold;
   margin: 0 5px;
   display: inline;

@@ -5,8 +5,6 @@ export const StyledApp = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: ${({ theme }) => theme.colors.bg};
-  color: ${({ theme }) => theme.colors.text};
 `
 
 const rotate = keyframes`

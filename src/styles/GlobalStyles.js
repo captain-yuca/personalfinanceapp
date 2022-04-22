@@ -15,6 +15,7 @@ const ResetStyles = css`
   h5,
   h6,
   p,
+  button,
   blockquote,
   pre,
   a,

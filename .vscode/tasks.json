@@ -7,6 +7,13 @@
       "problemMatcher": [],
       "label": "dev",
       "detail": "docker-compose -f docker-compose.dev.yml up"
+    },
+    {
+      "type": "shell",
+      "command": "json-server --watch db.json --port 8000",
+      "problemMatcher": [],
+      "label": "json-server",
+      "detail": "json-server --watch db.json --port 8000"
     }
   ]
 }

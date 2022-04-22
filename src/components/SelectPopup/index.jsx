@@ -1,8 +1,8 @@
 import React from 'react'
-import TodoList from './TodoList'
+import SelectPopup from './SelectPopup'
 
 function Wrapper(props) {
-  return <TodoList {...props} />
+  return <SelectPopup {...props} />
 }
 
 export default Wrapper

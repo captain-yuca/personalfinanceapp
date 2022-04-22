@@ -8,7 +8,7 @@ export default function MainPage() {
   return (
     <>
       <Helmet>
-        <title>Home page | React MAD Boiler</title>
+        <title>Budget | React MAD Boiler</title>
       </Helmet>
       <Budget />
     </>
